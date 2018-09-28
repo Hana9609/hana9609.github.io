@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Projects!</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="website.js"></script>
+    <style>
+        body
+        {
+            background-image: url("IMG/mountain.jpg");
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+        }
+    </style> <!-- From class notes -->
+</head>
+<body>
+
+<div class="a">
+
+    <h1>My Mini-Projects</h1>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="family.html">Family</a>
+        <a href="interests.html">Hobbies/Interests</a>
+        <a class="active" href="projects.html">Mini-Projects</a>
+    </div> <!-- from W3Schools.com -->
+
+    <form name="project1">
+        <h4>Temperature Bug!</h4>
+        <br><br>
+        Please type a numeric score to convert: <input type="text" name="temp">
+        <br>
+        <button type="button" onclick="document.project1.result.value=temperatureBug()">Convert!</button>
+        <br><br>
+        <input type="text" readonly="true" name="result" style="border-style: none">
+    </form>
+
+    <form name="project3">
+        <h4>Grade Converter!</h4>
+        <br><br>
+        Please type a numeric score to convert: <input type="text" name="num1">
+        <br>
+        <button type="button" onclick="document.project3.result.value=assignGrade()">Convert!</button>
+        <br><br>
+        <input type="text" readonly="true" name="result" style="border-style: none">
+    </form>
+
+</div>
+
+</body>
+</html>
