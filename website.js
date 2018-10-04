@@ -35,10 +35,21 @@ function temperatureBug()
 
 function calorieCounter()
 {
-    var activity = document.project2.activity;
-    var time = document.project2.time;
+    var activity = document.getElementById('activity').value;
+    var time = document.project2.time.value;
 
-
+    if(activity == "bowl")
+    {
+        return 3 * time + " " + "Calories burned";
+    }
+    else if(activity == "weightLift")
+    {
+        return 5 * time + " " + "Calories burned";
+    }
+    else if(activity == "run")
+    {
+        return 10 * time + " " + "Calories burned";
+    }
 }
 
 function assignGrade()

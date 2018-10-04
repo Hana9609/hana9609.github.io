@@ -43,24 +43,19 @@
         <h4>Calorie Counter!</h4>
         <br><br>
         Select an activity:
-        <select name="activity">
+        <select id="activity">
             <option>Activity</option>
             <option value="bowl">Bowling</option>
-            <option value="gym">Gym</option>
+            <option value="weightLift">Weight Lifting</option>
             <option value="run">Running</option>
         </select>
         <br><br>
-        Select an amount of time doing said activity:
-        <select name="time">
-            <option>Time</option>
-            <option value="30min">30 Minutes</option>
-            <option value="1h">1 Hour</option>
-            <option value="2h">2 Hours</option>
-        </select>
+        Please type amount of time doing said activity in minutes:
+        <input type="text" name="time">
         <br>
         <button type="button" onclick="document.project2.result.value=calorieCounter()">Calculate!</button>
         <br><br>
-        <input type="text" readonly="true" name="result" style="border-style: none">
+        <input type="text" readonly="true" id="result" style="border-style: none">
     </form>
 
     <form name="project3">
