@@ -31,9 +31,34 @@
     <form name="project1">
         <h4>Temperature Bug!</h4>
         <br><br>
-        Please type a numeric score to convert: <input type="text" name="temp">
+        Please type a temperature: <input type="text" name="temp">
         <br>
         <button type="button" onclick="document.project1.result.value=temperatureBug()">Convert!</button>
+        <br><br>
+        <input type="text" readonly="true" name="result" size="50" style="border-style: none">
+        <img id="weather" src="" height="75">
+    </form>
+
+    <form name="project2">
+        <h4>Calorie Counter!</h4>
+        <br><br>
+        Select an activity:
+        <select name="activity">
+            <option>Activity</option>
+            <option value="bowl">Bowling</option>
+            <option value="gym">Gym</option>
+            <option value="run">Running</option>
+        </select>
+        <br><br>
+        Select an amount of time doing said activity:
+        <select name="time">
+            <option>Time</option>
+            <option value="30min">30 Minutes</option>
+            <option value="1h">1 Hour</option>
+            <option value="2h">2 Hours</option>
+        </select>
+        <br>
+        <button type="button" onclick="document.project2.result.value=calorieCounter()">Calculate!</button>
         <br><br>
         <input type="text" readonly="true" name="result" style="border-style: none">
     </form>

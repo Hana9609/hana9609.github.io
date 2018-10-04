@@ -2,43 +2,50 @@
 function temperatureBug()
 {
     var temp = document.project1.temp.value;
+
     if (temp <= -459.67)
     {
-        return "You are not only dead but every atom in you body is frozen."
+        return document.getElementById('weather').src="IMG/0K.jpg", "Not only are you dead, but every atom in your body is frozen.";
     }
-    if (temp < -330)
+    else if (temp <= -330)
     {
-        return "You're literally on Pluto."
+        return document.getElementById('weather').src="IMG/Pluto.jpg", "You're literally on Pluto.";
     }
-    if (temp < 40)
+    else if (temp <= 40)
     {
-        return "Winter"
+        return document.getElementById('weather').src="IMG/winter.jpg", "Winter";
     }
-    if (temp < 50)
+    else if (temp <= 50)
     {
-        return "Autumn"
+        return document.getElementById('weather').src="IMG/autumn.jpg", "Autumn";
     }
-    if (temp < 65)
+    else if (temp < 75)
     {
-        return "Spring"
+        return document.getElementById('weather').src="IMG/spring.jpg", "Spring";
     }
-    if (temp > 75)
+    else if (temp >= 9940)
     {
-        return "Summer"
+        return document.getElementById('weather').src="IMG/sun.jpg", "You're on the Sun.";
     }
-    if (temp > 9940)
+    else if (temp >=75)
     {
-        return "You're on the Sun."
+        return document.getElementById('weather').src="IMG/summer.jpg", "Summer";
     }
 }
 
+function calorieCounter()
+{
+    var activity = document.project2.activity;
+    var time = document.project2.time;
 
+
+}
 
 function assignGrade()
 {
 
-    var score
-        = document.project3.num1.value;
+    var score = document.project3.num1.value;
+
     if (score < 50)
     {
         return "F";
