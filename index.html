@@ -2,55 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yanni's Personal Website</title>
-    <link rel="stylesheet" href="home.css">
-    <style>
-        body
-        {
-            background-image: url("IMG/mountain.jpg");
-            background-position: center;
-            background-repeat: repeat;
-            background-size: cover;
-        }
-    </style> <!-- From class notes -->
+    <title>Base Converter</title>
+    <script src="myScript.js"></script>
 </head>
 <body>
+<form name="toBinary">
+    <input name="result" readonly="true">
+    <button type="button" onclick="document.toBinary.result.value=tenToSmall()">to Binary</button>
+</form>
 
-<div class="a">
-
-<h1>All About Yanni Hana!!!</h1>
-
-<div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="family.html">Family</a>
-    <a href="interests.html">Hobbies/Interests</a>
-    <a href="projects.html">Mini-Projects</a>
-
-</div> <!-- from W3Schools.com -->
-
-<h4>After reading this website, you will learn more about me!</h4>
-
-<h2>My Life so Far...</h2>
-
-<p>
-    Both of my parents are from the Middle-East, and they speak Aramaic, which is an ancient language that Jesus spoke. My father moved to the US in 1995, while my mother moved to the US in 1990. They met in
-    1998 and ended up getting married in 2000. I was born 2 years later, on January 23, 2002 in San Diego, California. We then moved
-    to Schaumburg, Illinois in 2004, where both of my younger siblings were born, my brother in 2005, and my sister in 2010. I went to
-    Neil Armstrong Elementary school for grades K-2 before moving to Streamwood, IL in 2010 where I went to Albert Einstein for the rest of Elementary
-    school. Then we moved again in 2012 to Hanover Park when I was in 4th grade, which is where I still live to this day. I went to Jane Addams Junior High School
-    where I graduated from 8th grade in 2016. I now go to Hoffman Estates High School where I am currently in the first semester of my Junior year.
-</p>
-
-</div>
-
-<div class="row">
-    <div class="column">
-        <img src="IMG/House.jpg" alt="House" style="width:100%">
-    </div>
-    <div class="column">
-        <img src="IMG/HEHS.jpg" alt="HEHS" style="width:100%">
-    </div>
-</div> <!-- from W3Schools.com -->
+<form name="toDecimal">
+    <input name="result" readonly="true">
+    <button type="button" onclick="document.toDecimal.result.value=smallToTen()">to Decimal</button>
+</form>
 
 </body>
 </html>
