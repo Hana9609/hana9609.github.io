@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Base Converter</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="website.js"></script>
+    <style>
+        body
+        {
+            background-image: url("IMG/mountain.jpg");
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+        }
+    </style> <!-- From class notes -->
+</head>
+<body>
+
+<div class="a">
+    <h1>Number Base Converter</h1>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="family.html">Family</a>
+        <a href="interests.html">Hobbies/Interests</a>
+        <a href="projects.html">Mini-Projects</a>
+        <a class= "active" href="baseConverter.html">Binary Converters</a>
+    </div> <!-- from W3Schools.com -->
+
+    <form name="toBinary">
+        Please type a decimal number to convert: <input type="text" name="decimal">
+        <br>
+        <button type="button" onclick="document.toBinary.result.value=tenToSmall()">Convert!</button>
+        <br><br>
+        <input type="text" readonly="true" name="result" style="border-style: none">
+    </form>
+
+    <form name="toDecimal">
+        Please type a Binary number to convert: <input type="text" name="binary">
+        <br>
+        <button type="button" onclick="document.toDecimal.result.value=smallToTen()">Convert!</button>
+        <br><br>
+        <input type="text" readonly="true" name="result" style="border-style: none">
+    </form>
+
+</div>
+
+</body>
+</html>
