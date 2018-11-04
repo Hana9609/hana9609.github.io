@@ -90,16 +90,14 @@ function assignGrade()
 
 function tenToSmall(num, base)
 {
-    num = 79;
     base = 2;
+    var num = document.toBinary.decimal.value;
     smallNum = "";
 
     while (num > 0)
     {
         smallNum = num%base + smallNum; // returns remainder
         num = Math.floor(num/base);
-        alert(smallNum);
-        alert(num);
 
     }
     return smallNum;
@@ -108,7 +106,7 @@ function tenToSmall(num, base)
 
 function smallToTen(num, base)
 {
-    num = 1101;
+    var num = document.toDecimal.binary.value;
     base = 2;
     tenNum = 0;
     numLength = num.toString().length;
@@ -173,4 +171,3 @@ function divNums(p1, p2)
 {
     return p1/p2;
 }
-
