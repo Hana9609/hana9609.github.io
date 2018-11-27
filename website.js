@@ -172,32 +172,3 @@ function divNums(p1, p2)
     return p1/p2;
 }
 
-function madLib()
-{
-    var x=[];
-
-    return "Julius Caesar was born in 102 B. F. He was a"
-        + green +
-        "general, and between 49 and 58 B.C. he defeated the Gauls, the Goths, and the"
-        + geese +
-        ". After that, he"
-        + quickly +
-        "became more famous and defeated Pompey at the battle of "
-        + mountEverest +
-        "at Pharsala. The Romans then elected him permanent "
-        + plumber +
-        ", and he used to walk around wearing a circlet of ivy leaves on his "
-        + eye +
-        ". Then Caesar went to Egypt, where he met Cleopatra, the teenage Egyptian "
-        + mouse +
-        ".When he conquered the Syrians in 46 B.C., he sent back a message saying, 'Veni, vedi, "
-        + Piza +
-        ".' In 44 B.C., a soothsayer told Caesar to 'Beware the Ides of "
-        + ninja +
-        ",  but he ignored the warning and in March he was stabbed in the "
-        + escalator +
-        " by a group of senators. His last words were, 'Et tu "
-        + anzalone +
-        "?'"
-
-}

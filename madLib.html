@@ -4,7 +4,39 @@
     <meta charset="UTF-8">
     <title>Mad-Lib</title>
     <link rel="stylesheet" href="home.css">
-    <script src="website.js"></script>
+    <script type="text/javascript">
+
+        function madLib()
+        {
+            var x=[document.adj.value, document.nouns.value, document.adV.value, document.loc.value, document.job.value, document.bodyPart.value, document.noun1.value, document.itlWord.value, document.noun2.value, document.noun3.value, document.itlPer.value];
+
+            return "Julius Caesar was born in 102 B.C. He was a "
+                + x[0].bold() +
+                " general, and between 49 and 58 B.C. he defeated the Gauls, the Goths, and the"
+                + x[1].bold() +
+                " . After that, he "
+                + x[2].bold() +
+                " became more famous and defeated Pompey at the battle of "
+                + x[3].bold() +
+                " at Pharsala. The Romans then elected him permanent "
+                + x[4].bold() +
+                ", and he used to walk around wearing a circlet of ivy leaves on his "
+                + x[5].bold() +
+                ". Then Caesar went to Egypt, where he met Cleopatra, the teenage Egyptian "
+                + x[6].bold() +
+                ".When he conquered the Syrians in 46 B.C., he sent back a message saying, 'Veni, vedi, "
+                + x[7].bold() +
+                ".' In 44 B.C., a soothsayer told Caesar to 'Beware the Ides of "
+                + x[8].bold() +
+                ",  but he ignored the warning and in March he was stabbed in the "
+                + x[9].bold() +
+                " by a group of senators. His last words were, 'Et tu "
+                + x[10].bold() +
+                "?'"
+
+        }
+
+    </script>
     <style>
         body
         {
@@ -34,8 +66,6 @@
 
     Adverb: <input type="text" name="adV">
 
-    Capital Letter of the Alphabet: <input type="text" name="F">
-
     Famous Italian Person: <input type="text" name="itlPer">
 
     Geographical Location: <input type="text" name="loc">
@@ -54,7 +84,9 @@
 
     Plural Noun: <input type="text" name="nouns">
 
-    <button type="button" onclick="madLib()">Get Mad!</button>
+    <button type="button" onclick=document.getElementById('lib').innerHTML=madLib()>Get Mad!</button>
+
+    <p id="lib"></p>
 
 </div>
 
