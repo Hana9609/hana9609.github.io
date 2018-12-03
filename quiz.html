@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz about OWL</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="website.js"></script>
+    <style>
+        body
+        {
+            background-image: url("IMG/mountain.jpg");
+            background-position: center;
+            background-repeat: repeat;
+            background-size: cover;
+        }
+    </style> <!-- From class notes -->
+</head>
+<body>
+<div class="a">
+
+    <h1>Quiz</h1>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="family.html">Family</a>
+        <a href="interests.html">Hobbies/Interests</a>
+        <a href="projects.html">Mini-Projects</a>
+        <a href="baseConverter.html">Binary Converters</a>
+        <a href="javaCalc.html">Calculator</a>
+        <a href="madLib.html">Mad-Lib</a>
+        <a class="active" href="quiz.html">Quiz</a>
+    </div> <!-- from W3Schools.com -->
+
+<form name="quiz">
+    <img src="IMG/OWL.jpg" height="240" width="426"/>
+    <br><br><br>
+    Question 1: What esports league uses this logo?
+    <br>
+    <input type="text" name="a1">
+    <br><br>
+    Question 2: Which team won the inaugural season of the Overwatch League?<br>
+    <input type="radio" name="a2" value="LA Valiant">LA Valiant<br>
+    <input type="radio" name="a2" value="London Spitfire">London Spitfire<br>
+    <input type="radio" name="a2" value="New York Excelsior">New York Excelsior<br>
+    <input type="radio" name="a2" value="Shanghai Dragons">Shanghai Dragons<br>
+    <br><br>
+    Question 3: Which of the following teams made it to the grand finals of the Overwatch League?<br>
+    <input type="checkbox" name="a3A" value="LAValiant">LA Valiant<br>
+    <input type="checkbox" name="a3B" value="Philadelphia Fusion">Philadelphia Fusion<br>
+    <input type="checkbox" name="a3C" value="LondonSpitfire">London Spitfire<br>
+    <input type="checkbox" name="a3D" value="New York Excelsior">New York Excelsior<br>
+    <input type="checkbox" name="a3E" value="LA Gladiators">LA Gladiators<br>
+    <input type="checkbox" name="a3F" value="Boston Uprising">Boston Uprising<br>
+    <br><br>
+    <button type="button" onclick="checkAnswers()">CHECK ANSWERS</button>
+</form>
+</div>
+</body>
+</html>

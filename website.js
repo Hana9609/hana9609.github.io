@@ -172,3 +172,43 @@ function divNums(p1, p2)
     return p1/p2;
 }
 
+function checkAnswers()
+{
+    //make array to store answers
+    var feedback = [];
+    var score=0;
+    var q1Answer = document.quiz.a1.value.toLowerCase();
+
+    if (q1Answer === 'overwatch league')
+    {
+        score++;
+        feedback.push("Question 1 is correct!");
+    }
+    else
+    {
+        feedback.push("WRONG! Question 1 was Overwatch League");
+    }
+
+    if (document.quiz.a2.value === 'London Spitfire')
+    {
+        score++;
+        feedback.push("Question 2 is correct!");
+    }
+    else
+    {
+        feedback.push("WRONG! Question 2 was the London Spitfire");
+    }
+    if (document.quiz.a3A.checked === false && document.quiz.a3B.checked === true && document.quiz.a3C.checked === true && document.quiz.a3D.checked === false && document.quiz.a3E.checked === false && document.quiz.a3F.checked === false)
+    {
+        score++;
+        feedback.push("Question 3 is correct!");
+    }
+    else
+    {
+        feedback.push("WRONG! The teams that made it to the Grand Finals were the Philadelphia Fusion and the London Spitfire");
+    }
+
+    alert(feedback);
+    alert("You got " + score + " questions right");
+}
+
