@@ -178,37 +178,65 @@ function checkAnswers()
     var feedback = [];
     var score=0;
     var q1Answer = document.quiz.a1.value.toLowerCase();
+    var q5Answer = document.quiz.a5.value.toString();
 
     if (q1Answer === 'overwatch league')
     {
         score++;
-        feedback.push("Question 1 is correct!");
+        feedback.push(" Question 1 is correct!");
     }
     else
     {
-        feedback.push("WRONG! Question 1 was Overwatch League");
+        feedback.push(" WRONG! Question 1 was Overwatch League");
     }
 
-    if (document.quiz.a2.value === 'London Spitfire')
+    if (document.quiz.a2.value === 'LS')
     {
         score++;
-        feedback.push("Question 2 is correct!");
+        feedback.push(" Question 2 is correct!");
     }
     else
     {
-        feedback.push("WRONG! Question 2 was the London Spitfire");
+        feedback.push(" WRONG! Question 2 was the London Spitfire.");
     }
     if (document.quiz.a3A.checked === false && document.quiz.a3B.checked === true && document.quiz.a3C.checked === true && document.quiz.a3D.checked === false && document.quiz.a3E.checked === false && document.quiz.a3F.checked === false)
     {
         score++;
-        feedback.push("Question 3 is correct!");
+        feedback.push(" Question 3 is correct!");
     }
     else
     {
-        feedback.push("WRONG! The teams that made it to the Grand Finals were the Philadelphia Fusion and the London Spitfire");
+        feedback.push(" WRONG! The teams that made it to the Grand Finals were the Philadelphia Fusion and the London Spitfire");
+    }
+    if (document.quiz.a4.value === 'SD')
+    {
+        score++;
+        feedback.push(" Question 4 is correct!");
+    }
+    else
+    {
+        feedback.push(" WRONG! Question 4 was the Shanghai Dragons.");
+    }
+    if (q5Answer === '12')
+    {
+        score++;
+        feedback.push(" Question 5 is correct!");
+    }
+    else
+    {
+        feedback.push(" WRONG! There were 12 teams in the inaugural season of the Overwatch League");
+    }
+    if (document.quiz.a6A.checked === true && document.quiz.a6B.checked === false && document.quiz.a6C.checked === false && document.quiz.a6D.checked === true && document.quiz.a6E.checked === false && document.quiz.a6F.checked === true)
+    {
+        score++;
+        feedback.push(" Question 6 is correct!");
+    }
+    else
+    {
+        feedback.push(" WRONG! The teams that won a stage playoff were the London Spitfire, New York Excelsior, and the LA Valiant.");
     }
 
     alert(feedback);
-    alert("You got " + score + " questions right");
+    alert("You got " + score + "/6 questions right");
 }
 

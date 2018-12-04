@@ -8,9 +8,22 @@
 
         function madLib()
         {
-            var x=[document.adj.value, document.nouns.value, document.adV.value, document.loc.value, document.job.value, document.bodyPart.value, document.noun1.value, document.itlWord.value, document.noun2.value, document.noun3.value, document.itlPer.value];
+            var x=[];
+            {
+                feedback.push(document.adj.value);
+                feedback.push(document.nouns.value);
+                feedback.push(document.adV.value);
+                feedback.push(document.loc.value);
+                feedback.push(document.job.value);
+                feedback.push(document.bodyPart.value);
+                feedback.push(document.noun1.value);
+                feedback.push(document.itlWord.value);
+                feedback.push(document.noun2.value);
+                feedback.push(document.noun3.value);
+                feedback.push(document.itlPer.value);
+            }
 
-            return "Julius Caesar was born in 102 B.C. He was a "
+            alert( "Julius Caesar was born in 102 B.C. He was a "
                 + x[0].bold() +
                 " general, and between 49 and 58 B.C. he defeated the Gauls, the Goths, and the"
                 + x[1].bold() +
@@ -32,7 +45,7 @@
                 + x[9].bold() +
                 " by a group of senators. His last words were, 'Et tu "
                 + x[10].bold() +
-                "?'"
+                "?'")
 
         }
 
@@ -63,31 +76,32 @@
         <a href="quiz.html">Quiz</a>
     </div> <!-- from W3Schools.com -->
 
-    Adjective: <input type="text" name="adj">
-
-    Adverb: <input type="text" name="adV">
-
-    Famous Italian Person: <input type="text" name="itlPer">
-
-    Geographical Location: <input type="text" name="loc">
-
-    Italian Word: <input type="text" name="itlWord">
-
-    Noun #1: <input type="text" name="noun1">
-
-    Noun #2: <input type="text" name="noun2">
-
-    Noun #3: <input type="text" name="noun3">
-
-    Occupation: <input type="text" name="job">
-
-    Part of the Body: <input type="text" name="bodyPart">
-
-    Plural Noun: <input type="text" name="nouns">
-
-    <button type="button" onclick=document.getElementById('lib').innerHTML=madLib()>Get Mad!</button>
-
-    <p id="lib"></p>
+    <p id="lib">
+        Adjective: <input type="text" name="adj">
+        <br><br>
+        Adverb: <input type="text" name="adV">
+        <br><br>
+        Famous Italian Person: <input type="text" name="itlPer">
+        <br><br>
+        Geographical Location: <input type="text" name="loc">
+        <br><br>
+        Italian Word: <input type="text" name="itlWord">
+        <br><br>
+        Noun #1: <input type="text" name="noun1">
+        <br><br>
+        Noun #2: <input type="text" name="noun2">
+        <br><br>
+        Noun #3: <input type="text" name="noun3">
+        <br><br>
+        Occupation: <input type="text" name="job">
+        <br><br>
+        Part of the Body: <input type="text" name="bodyPart">
+        <br><br>
+        Plural Noun: <input type="text" name="nouns">
+        <br><br>
+        <button type="button" onclick=document.getElementById('lib').innerHTML=madLib()>Get Mad!</button>
+        <br><br>
+    </p>
 
 </div>
 
