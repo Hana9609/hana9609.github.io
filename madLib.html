@@ -8,43 +8,43 @@
 
         function madLib()
         {
-            var x=[];
-            {
-                feedback.push(document.adj.value);
-                feedback.push(document.nouns.value);
-                feedback.push(document.adV.value);
-                feedback.push(document.loc.value);
-                feedback.push(document.job.value);
-                feedback.push(document.bodyPart.value);
-                feedback.push(document.noun1.value);
-                feedback.push(document.itlWord.value);
-                feedback.push(document.noun2.value);
-                feedback.push(document.noun3.value);
-                feedback.push(document.itlPer.value);
-            }
+            var feedback=[];
+
+            feedback.push(document.mad.adj.value);
+            feedback.push(document.mad.nouns.value);
+            feedback.push(document.mad.adV.value);
+            feedback.push(document.mad.loc.value);
+            feedback.push(document.mad.job.value);
+            feedback.push(document.mad.bodyPart.value);
+            feedback.push(document.mad.noun1.value);
+            feedback.push(document.mad.itlWord.value);
+            feedback.push(document.mad.noun2.value);
+            feedback.push(document.mad.noun3.value);
+            feedback.push(document.mad.itlPer.value);
+
 
             alert( "Julius Caesar was born in 102 B.C. He was a "
-                + x[0].bold() +
+                + feedback[0].bold() +
                 " general, and between 49 and 58 B.C. he defeated the Gauls, the Goths, and the"
-                + x[1].bold() +
+                + feedback[1].bold() +
                 " . After that, he "
-                + x[2].bold() +
+                + feedback[2].bold() +
                 " became more famous and defeated Pompey at the battle of "
-                + x[3].bold() +
+                + feedback[3].bold() +
                 " at Pharsala. The Romans then elected him permanent "
-                + x[4].bold() +
+                + feedback[4].bold() +
                 ", and he used to walk around wearing a circlet of ivy leaves on his "
-                + x[5].bold() +
+                + feedback[5].bold() +
                 ". Then Caesar went to Egypt, where he met Cleopatra, the teenage Egyptian "
-                + x[6].bold() +
+                + feedback[6].bold() +
                 ".When he conquered the Syrians in 46 B.C., he sent back a message saying, 'Veni, vedi, "
-                + x[7].bold() +
+                + feedback[7].bold() +
                 ".' In 44 B.C., a soothsayer told Caesar to 'Beware the Ides of "
-                + x[8].bold() +
+                + feedback[8].bold() +
                 ",  but he ignored the warning and in March he was stabbed in the "
-                + x[9].bold() +
+                + feedback[9].bold() +
                 " by a group of senators. His last words were, 'Et tu "
-                + x[10].bold() +
+                + feedback[10].bold() +
                 "?'")
 
         }
@@ -76,7 +76,7 @@
         <a href="quiz.html">Quiz</a>
     </div> <!-- from W3Schools.com -->
 
-    <p id="lib">
+    <form name="mad">
         Adjective: <input type="text" name="adj">
         <br><br>
         Adverb: <input type="text" name="adV">
@@ -99,7 +99,10 @@
         <br><br>
         Plural Noun: <input type="text" name="nouns">
         <br><br>
-        <button type="button" onclick=document.getElementById('lib').innerHTML=madLib()>Get Mad!</button>
+    </form>
+
+    <p id="lib">
+        <button type="button" onclick="document.getElementById('lib').innerHTML=madLib()">Get Mad!</button>
         <br><br>
     </p>
 
